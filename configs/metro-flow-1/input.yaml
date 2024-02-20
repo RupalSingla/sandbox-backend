@@ -38,7 +38,7 @@ search_trip:
     extractionPathReplace: "${bpp_id}"
     error: "End stop is required"
 
-select:
+select:    
   - name: "Item id"
     key: "itemId"
     type: "text"

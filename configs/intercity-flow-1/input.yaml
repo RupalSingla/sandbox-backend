@@ -1,0 +1,16 @@
+search_route:
+  - name: "Vehicle Category"
+    key: "vehicleCategaory"
+    type: "text"
+    errorText: "Vehicle category is required"
+  - name: "Payment Tags"
+    key: "paymentTagsSearch"
+    type: "multiline"
+    defaultValue:
+      BUYER_FINDER_FEES:
+        BUYER_FINDER_FEES_TYPE: percent-annualized
+        BUYER_FINDER_FEES_PERCENTAGE: "1"
+      SETTLEMENT_TERMS:
+        DELAY_INTEREST: 2.5
+        STATIC_TERMS: "https://bap.credit.becknprotocol.io/personal-banking/loans/personal-loan"
+    errorText: "Payment tags is required"  
