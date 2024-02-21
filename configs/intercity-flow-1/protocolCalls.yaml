@@ -1,4 +1,22 @@
-search:
+search_route:
+  type: "search"
+  executed: false
+  shouldRender: true
+  config: "search_route"
+  nextRequest: "on_search_route"
+  preRequest: null
+  isCollapsed: false
+
+on_search_route:
+  type: "on_search"
+  executed: false
+  shouldRender: false
+  config: "on_search_route"
+  nextRequest: "search_trip"
+  preRequest: "search_route"
+  isCollapsed: false
+
+search_trip:
   type: "search"
   executed: false
   shouldRender: false
@@ -87,5 +105,3 @@ on_status:
   nextRequest: null
   preRequest: "status"
   isCollapsed: false
-
-

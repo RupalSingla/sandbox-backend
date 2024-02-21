@@ -247,7 +247,7 @@ protocol:
         value: session.cityCode
       - beckn_key: context.transaction_id
         value: session.transaction_id
-      - beckn_key: context.message_id
+      - beckn_key: context.message_id   
         value: messageId
       - beckn_key: context.timestamp
         value: timestamp
