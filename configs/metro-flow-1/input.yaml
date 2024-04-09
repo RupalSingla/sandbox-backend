@@ -15,6 +15,7 @@ search_route:
         STATIC_TERMS: "https://bap.credit.becknprotocol.io/personal-banking/loans/personal-loan"
     errorText: "Payment tags is required"
 
+
 search_trip:
   - name: "BPP URI"
     key: "bpp_uri"

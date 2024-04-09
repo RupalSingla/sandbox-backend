@@ -25,7 +25,7 @@ protocol:
         value: action
 
       - beckn_key: message.intent.fulfillment.stops[0].type
-        value: "START"
+        value: data.vehicleCategaory || session.vehicleCategaory
       - beckn_key: message.intent.fulfillment.stops[0].location.descriptor.gps
         value: data.startCoordinates
 
@@ -55,7 +55,8 @@ protocol:
         value: action
 
       - beckn_key: message.intent.fulfillment.stops[0].type
-        value: "START"
+        value: startPoint
+        check: data?.startStop
       - beckn_key: message.intent.fulfillment.stops[0].location.descriptor.gps
         value: data.startCoordinates
       - beckn_key: message.intent.fulfillment.stops[0].time.label

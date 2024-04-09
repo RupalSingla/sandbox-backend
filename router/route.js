@@ -188,7 +188,7 @@ router.post("/mapper/session", (req, res) => {
       data: "validations failed  bap_id || bap_uri || domain || ttl || version || country || cityCode || transaction_id || configName missing",
     });
   }
-
+ 
   console.log("body>>>>>", req.body)
 
   try {
